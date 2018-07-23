@@ -1072,9 +1072,9 @@
         </script>
         <style>
             #container {
-                display: flex;
+/*                display: flex;
                 flex-flow: row nowrap;
-                align-items: flex-end;
+                align-items: flex-end;*/
             }
             video {
                 background: #eee none repeat scroll 0 0;
@@ -1098,21 +1098,19 @@
     </head>
     <body>
         <h1>
-            <span>WebRTC two-way Audio/Video/Data Intercom & Recorder</span>
+            <span>Chedd Conference System</span>
         </h1>
-        <h3 style="color:red" >
-            <span>WARNING! Some browsers do not allow to access local media on insecure origins.</span>
-            <span>Consider switching the UV4L Streaming Server to secure HTTPS instead.</span>
-        </h3>
         <div id="container">
             <div class="overlayWrapper">
-                <video id="remote-video" autoplay="" controls="true" playsinline="true" ½-½-:qwidth="640" height="480">
+                <!-- Might have to add controls="true" -->
+                <video id="remote-video" autoplay=""  playsinline="true" ½-½-:qwidth="640" height="480">
                     Your browser does not support the video tag.
                 </video>
                 <p class="overlay">remote</p>
             </div>
+            <br>
             <div class="overlayWrapper">
-                <video id="local-video" playsinline="true" controls="true" autoplay="" width="320" height="240">
+                <video id="local-video" playsinline="true"  autoplay="" width="320" height="240">
                     Your browser does not support the video tag.
                 </video>
                 <p class="overlay">local</p>
