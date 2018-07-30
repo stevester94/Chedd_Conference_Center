@@ -9,4 +9,4 @@ uv4l --auto-video_nr --driver raspicam --encoding mjpeg --server-option '--enabl
 --server-option '--www-ssl-certificate-file=/etc/letsencrypt/live/www.ssmackey.org/fullchain.pem' \
 --server-option '--www-root-path=/home/pi/ccs/' \
 --server-option '--www-webrtc-signaling-path=/webrtc' \
---server-option '--webrtc-renderer-fullscreen=yes'
+#--server-option '--webrtc-renderer-fullscreen=yes'
