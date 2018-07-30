@@ -1,0 +1,3 @@
+- create a build dir under fbcp, run `cmake -DSPI_BUS_CLOCK_DIVISOR=15 -DWAVESHARE35B_ILI9486=ON ..`
+- then make
+- full instructions are in the readme
