@@ -1,9 +1,13 @@
 #Enable SSH:
 [Raspberry docs to enable ssh](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 
-#Enable the camera
+#Change the default password!
+just use the `passwd` command
+
+#Enable the camera and force sound through 3.5mm jack
 `sudo raspi-config`
 - Navigate to interface->enable camera
+- Navigate to advanced->sound->force 3.5mm
 
 # Install some basic packages
 `sudo apt-get update; sudo apt-get install vim git cmake`
