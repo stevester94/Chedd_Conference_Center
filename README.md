@@ -75,11 +75,18 @@ In the <fbcp submodule> directory:
 `make`
 
 Now set the display to start with the system, and make the display sleep when not in use
-Add `sudo <path to your driver binary (binary file fbcp-ili9341 you just built)> &`   to /etc/rc.local
-Add contents of `set_sleep_time.bash to ~/.profile 
+Copy the binary you just built (fbcp-ili9341) to /usr/bin
+Copy chedd_conference_center.service to /etc/systemd/system/
+execute as root:
+    systemctl daemon-reload
+    systemctl enable chedd_conference_center.service
+    systemctl start chedd_conference_center.service
+With any luck, the screen should turn on...
+
+Add contents of `set_sleep_time.bash to ~/.profile `
 
 # Setup readonly fs (optional)
-Follow instructions at https://github.com/chesty/overlayroot, contained as a submodule here
+Follow instructions at [Overlayroot](https://github.com/chesty/overlayroot), contained as a submodule here
 its best to do this last
 run the script `dorootwork` to change the file system
 The `dorootwork` script only allows editing for the current shell...
