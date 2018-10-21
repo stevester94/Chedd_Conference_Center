@@ -83,3 +83,6 @@ Follow instructions at https://github.com/chesty/overlayroot, contained as a sub
 its best to do this last
 run the script `dorootwork` to change the file system
 The `dorootwork` script only allows editing for the current shell...
+
+# Notes and gotchas
+The letsencrypt certificate expires every 3 months, will need to repeat the process if it does. Though you can renew before hand
