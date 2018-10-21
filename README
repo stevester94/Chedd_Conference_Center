@@ -1,3 +1,0 @@
-- boot time changes go in /etc/rc.local
-	- run fbcp, and start uv4l_ssl	
-- Disable the systemd service for uv4l

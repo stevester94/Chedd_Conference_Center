@@ -1,0 +1,13 @@
+[Unit]
+Description=Display service for the chedd conference service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/bash -c "su root -c '/usr/bin/fbcp-ili9341 &'"
+
+# This isn't ideal... but I'm impatient and really need to make sure the damn display driver is dead otherwise might hang on reboot
+ExecStop=/bin/bash -c "pkill -9 fbcp-ili9341 && pkill -9 fbcp-ili9341 && pkill -9 fbcp-ili9341 && pkill -9 fbcp-ili9341 && pkill -9 fbcp-ili9341"
+
+[Install]
+WantedBy=multi-user.target
