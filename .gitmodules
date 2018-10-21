@@ -1,3 +1,6 @@
 [submodule "fbcp-ili9341"]
 	path = fbcp-ili9341
 	url = https://github.com/juj/fbcp-ili9341.git
+[submodule "overlayroot"]
+	path = overlayroot
+	url = https://github.com/chesty/overlayroot.git
