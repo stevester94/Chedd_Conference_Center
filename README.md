@@ -1,10 +1,10 @@
-#Enable SSH:
+# Enable SSH:
 [Raspberry docs to enable ssh](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 
-#Change the default password!
+# Change the default password!
 just use the `passwd` command
 
-#Enable the camera and force sound through 3.5mm jack
+# Enable the camera and force sound through 3.5mm jack
 `sudo raspi-config`
 - Navigate to interface->enable camera
 - Navigate to advanced->sound->force 3.5mm
@@ -61,7 +61,7 @@ And set the following settings to yes, if they are no or not present
 `fullscreen = yes`
 
 
-#Setup letsencrypt with certbot
+# Setup letsencrypt with certbot
 [certbot documentation](https://certbot.eff.org/lets-encrypt/debianstretch-other)
 
 # Certbot quick instructions
